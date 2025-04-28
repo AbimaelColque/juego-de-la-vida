@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+#controles {
+    margin: 10px;
+}
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(var(--columnas), 20px);
+    gap: 1px;
+    margin: 20px auto;
+    justify-content: center;
+}
+.celda {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+.viva {
+    background-color: #4CAF50;
+}
+input {
+    padding: 5px;
+    width: 50px;
+}

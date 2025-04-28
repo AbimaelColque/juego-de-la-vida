@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Vida de Conway</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <h1>Juego de la Vida de Conway</h1>
+    <div id="controles">
+        <label for="tamañoTablero">Tamaño:</label>
+        <input type="number" id="tamañoTablero" value="30" min="5" max="100">
+        <button onclick="inicializarTablero()">Crear Tablero</button>
+        <button onclick="inicializarAleatorio()">Aleatorio</button>
+        <button onclick="siguienteGeneracion()">Siguiente</button>
+        <button onclick="generacionAnterior()">Anterior</button>
+        <button onclick="alternarEjecucion()" id="playPause">Iniciar</button>
+        <button onclick="limpiarTablero()">Limpiar</button>
+    </div>
+    <div id="tablero"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
